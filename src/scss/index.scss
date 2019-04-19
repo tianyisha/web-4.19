@@ -1,0 +1,107 @@
+@import './_minix';
+@import './common';
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .header {
+        width: 100%;
+        height: px2rem(44px);
+        background: #eee;
+        display: flex;
+        .left {
+            width: px2rem(44px);
+            height: px2rem(44px);
+            text-align: center;
+            line-height: px2rem(44px);
+        }
+        .center {
+            flex: 1;
+            input {
+                width: 100%;
+                height: px2rem(40px);
+                line-height: px2rem(40px);
+                background: #fff;
+                border: 1px solid #ccc;
+            }
+        }
+        .right {
+            width: px2rem(44px);
+            height: px2rem(44px);
+            text-align: center;
+            line-height: px2rem(44px);
+        }
+    }
+    .main {
+        width: 100%;
+        flex: 1;
+        overflow: scroll;
+        ul {
+            display: flex;
+            overflow: scroll;
+            li {
+                width: px2rem(50px);
+                height: px2rem(30px);
+                flex-shrink: 0;
+                padding: 0 px2rem(10px);
+                line-height: px2rem(30px);
+                font-size: px2rem(14px);
+            }
+        }
+        ol {
+            display: flex;
+            overflow: scroll;
+            li {
+                width: px2rem(100px);
+                height: px2rem(80px);
+                margin-left: px2rem(5px);
+                flex-shrink: 0;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .pic {
+            width: 100%;
+            height: px2rem(110px);
+            margin-top: px2rem(10px);
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .content {
+            width: 100%;
+            margin-top: px2rem(10px);
+            dl {
+                dt {
+                    font-size: px2rem(16px)
+                }
+                dd {
+                    width: 100%;
+                    height: px2rem(140px);
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        width: 100%;
+        height: px2rem(50px);
+        background: skyblue;
+        display: flex;
+        a {
+            width: 20%;
+            text-align: center;
+            font-size: px2rem(16px);
+            i {
+                font-size: px2rem(16px);
+            }
+        }
+    }
+}
